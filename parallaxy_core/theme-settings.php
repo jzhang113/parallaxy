@@ -29,6 +29,7 @@ function parallaxy_form_system_theme_settings_alter(&$form, &$form_state)  {
     '#title' => t('Global Background Pattern'),
     '#default_value' => theme_get_setting('content_wrapper_pattern'),
     '#options' => array(
+      'content_wrapper_none' => t('none'),
       'content_wrapper_fourtyfivedegreee_fabric' => t('45degreee_fabric'),
       'content_wrapper_sixtydegree_gray' => t('60degree_gray'),
       'content_wrapper_always_grey' => t('always_grey'),
@@ -230,6 +231,7 @@ function parallaxy_form_system_theme_settings_alter(&$form, &$form_state)  {
       'content_wrapper_redox_01' => t('redox_01'),
       'content_wrapper_redox_02' => t('redox_02'),
       'content_wrapper_reticular_tissue' => t('reticular_tissue'),
+      'content_wrapper_retina_wood_dark' => t('retina_wood_dark'),
       'content_wrapper_retina_wood' => t('retina_wood'),
       'content_wrapper_retro_intro' => t('retro_intro'),
       'content_wrapper_ricepaper' => t('ricepaper'),
