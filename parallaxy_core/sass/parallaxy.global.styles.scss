@@ -1191,7 +1191,11 @@ ul.action-links {
 /*
  * When labels are set to inline in field display settings the clearfix class is automatically added
  */
-.field-label-inline {}
+.field-label-inline {
+  h2 {
+    margin: 0;
+  }
+}
 
 
 /*
