@@ -110,6 +110,11 @@
   ; plugins[page_layout][layouts] = custom_layouts
 
 
+;----------// Custom Panel Layout Plugins
+
+; plugins[panels][layouts] = panel_layouts
+
+
 ;----------// Site Features
 
   features[] = logo
@@ -135,7 +140,7 @@
   settings[bigscreen_max_width_unit] = 'px'
   settings[bigscreen_page_width]     = 100
   settings[bigscreen_sidebar_first]  = 25
-  settings[bigscreen_sidebar_second] = 25
+  settings[bigscreen_sidebar_second] = 30
   settings[bigscreen_set_max_width]  = 1
   settings[bigscreen_max_width]      = 1260
   settings[bigscreen_media_query]    = 'only screen and (min-width:1025px)'
@@ -147,7 +152,7 @@
   settings[tablet_landscape_sidebar_unit]   = '%'
   settings[tablet_landscape_page_width]     = 100
   settings[tablet_landscape_sidebar_first]  = 20
-  settings[tablet_landscape_sidebar_second] = 20
+  settings[tablet_landscape_sidebar_second] = 30
   settings[tablet_landscape_media_query]    = 'only screen and (min-width:769px) and (max-width:1024px)'
 
 

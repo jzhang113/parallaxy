@@ -57,6 +57,10 @@
 
   ; plugins[page_layout][layouts] = custom_layouts
 
+;----------// Custom Panel Layout Plugins
+
+  plugins[panels][layouts] = panel_layouts
+
 
 ;----------// Site Features
 
