@@ -10,6 +10,7 @@
   screenshot  = screenshot.png
 
 
+
 ;----------// Stylesheets
 
   stylesheets[screen][] = css/parallaxy.global.styles.css
