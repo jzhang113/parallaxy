@@ -17,10 +17,10 @@
 
 ;----------// Scripts
 
-  scripts[] = scripts/jquery.stellar.js
-  scripts[] = scripts/custom.js
-  scripts[] = scripts/tinynav.min.js
-  scripts[] = scripts/modernizr.dev.js
+  ;scripts[] = scripts/jquery.stellar.js
+  ;scripts[] = scripts/custom.js
+  ;scripts[] = scripts/tinynav.min.js
+  ;scripts[] = scripts/modernizr.dev.js
 
 
 
