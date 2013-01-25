@@ -329,4 +329,20 @@ function parallaxy_form_system_theme_settings_alter(&$form, &$form_state)  {
       'content_wrapper_zigzag' => t('zigzag'),
     ),
   );
+
+  // content_wrapper Enable Parallax
+  $parallax_active = array(1 => t('On'), 0 => t('Off'));
+
+  $form['at-settings']['parallaxy_custom']['parallax_wrapper'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Cusomize Parallax Scolling Effect'),
+    '#description' => t('<h3>Select if the Featured Image and Branding regions use the parallax scolling effect.</h3>'),
+  );
+
+  $form['at-settings']['parallaxy_custom']['parallax_wrapper']['parallax'] = array(
+    '#type' => 'radios',
+    '#title' => t('Parallax Behavior'),
+    '#default_value' => theme_get_setting('parallax'),
+    '#options' => $parallax_active,
+  );
 }

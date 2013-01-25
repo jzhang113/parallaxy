@@ -22,6 +22,7 @@
  */
 
 
+
 /**
  * Preprocess variables for the html template.
  */
@@ -39,6 +40,13 @@ function parallaxy_preprocess_html(&$vars) {
   // Implements body class for theme-setting color palette otpions
   $vars['classes_array'][] = theme_get_setting('content_wrapper_pattern');
 
+  // Check for and add Parallaxy Scroll Behavior
+  $parallax_active = theme_get_setting('parallax');
+
+  if ($parallax_active == '1') {
+    drupal_add_js(drupal_get_path('theme', 'parallaxy') . '/scripts/jquery.stellar.js', array('group' => JS_LIBRARY, 'every_page' => TRUE));
+    drupal_add_js(drupal_get_path('theme', 'parallaxy') . '/scripts/parallaxy.js');
+  }
 }
 
 
