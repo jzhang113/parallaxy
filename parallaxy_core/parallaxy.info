@@ -20,10 +20,10 @@
 
 
 ;----------// Scripts
-
-  scripts[] = scripts/custom.js
-  scripts[] = scripts/tinynav.min.js
   scripts[] = scripts/modernizr.dev.js
+  scripts[] = scripts/jquery.uniform.min.js
+  scripts[] = scripts/tinynav.min.js
+  scripts[] = scripts/custom.js
 
 
 
