@@ -59,6 +59,7 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html<?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 <?php print $head; ?>
 <title><?php print $head_title; ?></title>
 <?php print $styles; ?>
