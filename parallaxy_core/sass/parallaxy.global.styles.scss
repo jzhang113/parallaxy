@@ -554,9 +554,12 @@ ul.links {
  */
 .sidebar {
   background-color: $sidebar_background_color;
-  padding: $region_inner_padding;
   color: #f5f5f5;
   position: relative;
+
+  .region-inner {
+    padding: $region_inner_padding;
+  }
 
   a {
     color: $fye_gold;
