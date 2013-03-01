@@ -674,6 +674,10 @@ a {
   li {
     width: 25%;
     @include box-shadow(1px 0px 0px rgba(255,255,255,.2));
+
+    .lt-ie8 & {
+      width: 24%;
+    }
   }
 
   a {
