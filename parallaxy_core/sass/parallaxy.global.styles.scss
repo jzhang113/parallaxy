@@ -885,9 +885,11 @@ ul.sf-menu {
 
       &:active,
       &.active {
-        background-color: $fye_gold;
-        color: #1a1a1a;
-        padding-left: .5em;
+        .sidebar & {
+          background-color: $fye_gold;
+          color: #1a1a1a;
+          padding-left: .5em;
+        }
       }
 
       &:hover,

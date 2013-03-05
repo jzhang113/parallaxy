@@ -25,7 +25,7 @@ images_dir = "css/images"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
-output_style = (environment == :development) ? :expanded : :compressed
+output_style = (environment == :production) ? :expanded : :compressed
 
 # To enable relative paths to assets via compass helper functions. Since Drupal
 # themes can be installed in multiple locations, we don't need to worry about
@@ -37,4 +37,4 @@ relative_assets = true
 # - For production, we force the CSS to be regenerated even though the source
 #   scss may not have changed, since we want the CSS to be compressed and have
 #   the debug info removed.
-sass_options = (environment == :development) ? {:debug_info => true} : {:always_update => true}
+sass_options = (environment == :production) ? {:debug_info => false} : {:always_update => true}
