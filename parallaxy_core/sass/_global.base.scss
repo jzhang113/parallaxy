@@ -555,9 +555,8 @@ div.messages {
 */
 #content .panel-display,
 #content .panel-flexible {
-  margin-left: -$panel-gutter-width;
-  margin-right: -$panel-gutter-width;
-}
+  margin: 0 -2px;
+  }
 
 
 

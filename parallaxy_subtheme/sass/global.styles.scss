@@ -989,7 +989,9 @@ ul.action-links {
 /*
  * Main wrapper for most blocks, block_system_main does not have it
  */
-.block {}
+.block {
+  border: 3px solid $debug;
+}
 
 
 /*
@@ -1025,7 +1027,9 @@ ul.action-links {
 /*
  * Block title
  */
-.block-title {}
+.block-title {
+  border: 3px solid $debug;
+}
 
 
 /*
@@ -1038,7 +1042,7 @@ ul.action-links {
  * Match item list and block menu margin and padding
  */
 .block-content {
-
+  border: 3px solid $debug;
   ul,
   ol {}
 
