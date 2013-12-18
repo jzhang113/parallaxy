@@ -286,7 +286,6 @@ var {
 }
 
 .columns-inner {
-  background-color: #efefef;
   @include box-shadow(0px 0px 12px rgba(09,0,0,.1) inset);
 }
 
@@ -296,6 +295,7 @@ var {
 
 .content-inner {
   padding: $region_inner_padding;
+  background-color: #efefef;
 }
 
 
@@ -1486,7 +1486,7 @@ ul.action-links {
  */
 .block-content {
 
-  
+
   ul,
   ol {
     padding: 0 0 0 15px;

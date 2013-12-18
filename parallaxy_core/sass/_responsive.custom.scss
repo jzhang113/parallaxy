@@ -84,16 +84,23 @@
     @include font-size(3.2);
   }
 
-  // Faux column
-  .sidebar-second #content-column:after {
-    content: '';
-    width: 30%;
-    height: 100%;
-    background: $sidebar_background_color;
-    position: absolute;
-    top: 0;
-    right: 0;
-    @include box-shadow(0px 0px 6px rgba(0,0,0,.7));
+
+  //Faux column
+  .sidebar-second #content-column {
+    float: left;
+    clear: none;
+    background-color: $sidebar_background-color;
+}
+  #columns {
+    background-color: #efefef;
+
+  }
+
+
+  .region-sidebar-second {
+    width:30%;
+    float: left;
+    clear: none;
   }
 
   #content-wrapper {
