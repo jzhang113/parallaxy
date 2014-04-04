@@ -725,6 +725,8 @@ var {
   overflow: hidden;
   background-color: #1a1a1a;
   z-index: -1;
+  height: 430px;
+  position: fixed;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -741,6 +743,7 @@ var {
   background-image: url("images/patterns/grid.png");
   background-repeat: repeat;
   z-index: 1;
+  height: 430px;
 }
 .featured-image-overlay:before {
   content: "";
