@@ -195,6 +195,8 @@ var {
   overflow: hidden;
   background-color: #1a1a1a;
   z-index: -1;
+  height: 430px;
+  position: fixed;
   @include transition(all .5s ease-out);
 }
 
@@ -208,6 +210,7 @@ var {
   background-image: url('images/patterns/grid.png');
   background-repeat: repeat;
   z-index: 1;
+  height:430px;
 
   &:before {
     content: "";
@@ -286,7 +289,6 @@ var {
 }
 
 .columns-inner {
-  background-color: #efefef;
   @include box-shadow(0px 0px 12px rgba(09,0,0,.1) inset);
 }
 
@@ -296,6 +298,7 @@ var {
 
 .content-inner {
   padding: $region_inner_padding;
+  background-color: #efefef;
 }
 
 
@@ -435,6 +438,7 @@ var {
   margin-bottom: .5em;
   letter-spacing: -1px;
 }
+
 
 
 /* =============================================================================
@@ -1409,6 +1413,7 @@ ul.action-links {
  */
 .block {
   margin-bottom: 20px;
+
 }
 
 
@@ -1479,6 +1484,7 @@ ul.action-links {
  * Match item list and block menu margin and padding
  */
 .block-content {
+
 
   ul,
   ol {
@@ -1660,6 +1666,7 @@ ul.action-links {
 
 .node {
   margin-bottom: 20px;
+
 
   &.node-promoted {}
 
