@@ -44,8 +44,12 @@ function parallaxy_preprocess_html(&$vars) {
   $parallax_active = theme_get_setting('parallax');
 
   if ($parallax_active == '1') {
+    $vars['classes_array'][] = 'parallaxy-enabled';
     drupal_add_js(drupal_get_path('theme', 'parallaxy') . '/scripts/jquery.stellar.js', array('group' => JS_LIBRARY, 'every_page' => TRUE));
     drupal_add_js(drupal_get_path('theme', 'parallaxy') . '/scripts/parallaxy.js');
+  }
+  else {
+    $vars['classes_array'][] = 'parallaxy-disabled';
   }
 }
 

@@ -10,6 +10,8 @@ html {
 }
 
 #featured-image {
-  position: fixed;
   height: 430px;
+}
+.parallaxy-enabled #featured-image {
+  position: fixed;
 }

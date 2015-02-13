@@ -57,8 +57,12 @@
   .fio { min-height: 430px; }
 
   #featured-image {
-    position: fixed;
-    height: 430px;
+    position: relative;
+
+    .parallaxy-enabled & {
+      position: fixed;
+      height: 430px;
+    }
   }
 }
 
@@ -67,16 +71,40 @@
  * Tablet sizes and up
  */
  @media only screen and (min-width: 769px) {
-  #ui-wrapper { position: fixed; }
-  #nav-wrapper { position: fixed; }
-  #page-wrapper { margin-top: 40px; }
+  .parallaxy-enabled #ui-wrapper { position: fixed; }
+  .parallaxy-enabled #nav-wrapper { position: fixed; }
+  .parallaxy-enabled #page-wrapper { margin-top: 40px; }
+
+  .parallaxy-disabled {
+
+    #header-wrapper {
+      position: absolute;
+      top: 180px;
+      width: 100%;
+    }
+
+    #featured-image {
+      display: block;
+    }
+
+    #logo {
+      text-align: left;
+    }
+  }
+
+  .parallaxy-disabled.logged-in #header-wrapper {
+    top: 245px;
+  }
 
   #logo {
-    position: fixed;
-    top: 152px;
 
-    .logged-in & {
+    .parallaxy-enabled.logged-in & {
       top: 215px;
+    }
+
+    .parallaxy-enabled & {
+      position: fixed;
+      top: 152px;
     }
   }
 
@@ -107,9 +135,12 @@
   background-image: url('images/patterns/padded.png');
   background-repeat: repeat;
   border-top: 4px solid #222;
-  margin-top: 430px;
   @include box-shadow(0px 5px 8px rgba(0,0,0,.2) inset, 0px -20px 60px 3px rgba(0,0,0,.7 ));
   position: relative;
+
+  .parallaxy-enabled & {
+    margin-top: 430px;
+  }
 
   .container {
     @include background-rgba(255, 255, 255, .3);

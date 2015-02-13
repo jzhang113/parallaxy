@@ -196,8 +196,15 @@ var {
   background-color: #1a1a1a;
   z-index: -1;
   height: 430px;
-  position: fixed;
   @include transition(all .5s ease-out);
+
+  .parallaxy-enabled & {
+    position: fixed;
+  }
+
+  .parallaxy-disabled & {
+    display: none;
+  }
 }
 
 .fio {

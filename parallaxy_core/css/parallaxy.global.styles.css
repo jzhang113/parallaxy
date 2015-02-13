@@ -663,7 +663,7 @@ header[role=banner],
  * element as these can be overridden using font theme settings.
  */
 html {
-  background: white;
+  background: #fff;
   font-size: 62.5%;
 }
 
@@ -672,7 +672,7 @@ body {
   font-size: 87.5%;
   font-size: 16px;
   font-size: 1.6rem;
-  color: #444444;
+  color: #444;
   position: relative;
   z-index: 1;
   background-color: #333;
@@ -690,7 +690,7 @@ hr {
 }
 
 a {
-  color: #107acb;
+  color: #107ACB;
 }
 
 pre,
@@ -727,11 +727,16 @@ var {
   background-color: #1a1a1a;
   z-index: -1;
   height: 430px;
-  position: fixed;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+}
+.parallaxy-enabled #featured-image {
+  position: fixed;
+}
+.parallaxy-disabled #featured-image {
+  display: none;
 }
 
 .fio {
@@ -842,7 +847,7 @@ var {
   color: #f5f5f5;
 }
 #footer-wrapper a {
-  color: #f6c72f;
+  color: #F6C72F;
 }
 #footer-wrapper .block {
   width: 33.33%;
@@ -1018,7 +1023,7 @@ ul.links li {
   padding: 20px;
 }
 .sidebar a {
-  color: #f6c72f;
+  color: #F6C72F;
 }
 
 /*
@@ -1106,7 +1111,7 @@ a:hover, a:focus {
   font-weight: bold;
   font-size: 19px;
   font-size: 1.9rem;
-  color: #f6c72f;
+  color: #F6C72F;
   border-right: 1px solid #000;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
   letter-spacing: -1px;
@@ -1147,7 +1152,7 @@ a:hover, a:focus {
 }
 .nav ul.menu .active-trail,
 .nav ul.menu .active {
-  background-color: #f6c72f;
+  background-color: #F6C72F;
   color: #111;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);
   -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4) inset;
@@ -1264,7 +1269,7 @@ ul.menu li a {
   padding: 3px 0;
 }
 .sidebar ul.menu li a:active, .sidebar ul.menu li a.active {
-  background-color: #f6c72f;
+  background-color: #F6C72F;
   color: #1a1a1a;
   padding-left: .5em;
 }
@@ -1315,7 +1320,7 @@ ul.menu li a {
   display: inline;
 }
 #breadcrumb a:link, #breadcrumb a:visited, #breadcrumb a:active, #breadcrumb a.active, #breadcrumb a:hover, #breadcrumb a:focus {
-  color: #107acb;
+  color: #107ACB;
 }
 
 /* =============================================================================
@@ -1363,7 +1368,7 @@ ul.pager li.pager-current {
 #skip-link a {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
-  color: white;
+  color: #fff;
   display: block;
   line-height: 2;
   padding: 0;
@@ -1373,7 +1378,7 @@ ul.pager li.pager-current {
 #skip-link a:link, #skip-link a:visited {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
-  color: white;
+  color: #fff;
   display: block;
   line-height: 2;
   padding: 0;
@@ -1389,7 +1394,7 @@ ul.pager li.pager-current {
  * ========================================================================== */
 #tasks {
   padding: 10px 10px 10px 50px;
-  background: #333333;
+  background: #333;
   -moz-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1) inset, 0px -1px 0px #404040;
   -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1) inset, 0px -1px 0px #404040;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1) inset, 0px -1px 0px #404040;
@@ -1439,14 +1444,14 @@ ul.primary li a {
   color: #ccc;
 }
 ul.primary li a:hover, ul.primary li a:focus {
-  background-color: #107acb;
+  background-color: #107ACB;
   border: 1px solid #0c5e9c;
   color: #fff;
 }
 ul.primary li.active a,
 ul.primary li.active a:hover,
 ul.primary li.active a:focus {
-  background-color: #107acb;
+  background-color: #107ACB;
   border: 1px solid #0c5e9c;
   color: #fff;
 }
@@ -1755,9 +1760,9 @@ ul.action-links {
 }
 .node ul.links {
   border-top: 1px solid #ddd;
-  -moz-box-shadow: 0px 1px 0px white inset;
-  -webkit-box-shadow: 0px 1px 0px white inset;
-  box-shadow: 0px 1px 0px white inset;
+  -moz-box-shadow: 0px 1px 0px #fff inset;
+  -webkit-box-shadow: 0px 1px 0px #fff inset;
+  box-shadow: 0px 1px 0px #fff inset;
   padding-top: 10px;
 }
 .node ul.links li.print-html, .node ul.links li.print_html {
@@ -1819,7 +1824,7 @@ ul.action-links {
  * "New" marker for comments that are new for the current user
  */
 .new {
-  color: #cc0000;
+  color: #c00;
 }
 
 /*
@@ -1838,7 +1843,7 @@ ul.action-links {
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
-  border: 1px solid #cc0000;
+  border: 1px solid #c00;
 }
 .form-item label {
   font-weight: 700;
@@ -1852,7 +1857,7 @@ ul.action-links {
  */
 .marker,
 .form-required {
-  color: #cc0000;
+  color: #c00;
 }
 
 /*
@@ -1867,7 +1872,7 @@ ul.action-links {
  * Define consistent borders
  */
 fieldset {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
 }
 
 /*
@@ -1907,7 +1912,7 @@ tbody,
 tr,
 th,
 td {
-  border-color: #cccccc;
+  border-color: #ccc;
 }
 
 table,
@@ -1935,21 +1940,21 @@ th {
 }
 
 tbody tr {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
 }
 
 tr {
   /* Table row striping */
 }
 tr.odd {
-  background: white;
+  background: #fff;
 }
 tr.info, tr.even, tr:nth-child(2n+2) {
   border-bottom: 0;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 tr.odd td.active {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 tr.even td.active {
   background-color: #ebebeb;
@@ -2043,7 +2048,7 @@ div.messages ul {
  * Devel Module
  */
 .dev-query {
-  background: #eeeeee;
+  background: #eee;
   padding: 30px;
 }
 
@@ -2099,7 +2104,7 @@ div.messages ul {
   padding: 10px;
   line-height: normal;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
-  color: #f6c72f;
+  color: #F6C72F;
 }
 
 .node-type-album figure.field-item {
@@ -2126,8 +2131,10 @@ div.messages ul {
 #nav-wrapper .selector span {
   position: relative;
   background-color: #222;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg4ODg4OCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0NCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #888888), color-stop(100%, #444444));
   background-image: -moz-linear-gradient(#888888, #444444);
-  background-image: -o-linear-gradient(#888888, #444444);
   background-image: -webkit-linear-gradient(#888888, #444444);
   background-image: linear-gradient(#888888, #444444);
   padding: 8px 60px 5px 40px;
@@ -3433,6 +3440,9 @@ div.messages ul {
   }
 
   #featured-image {
+    position: relative;
+  }
+  .parallaxy-enabled #featured-image {
     position: fixed;
     height: 430px;
   }
@@ -3441,24 +3451,40 @@ div.messages ul {
  * Tablet sizes and up
  */
 @media only screen and (min-width: 769px) {
-  #ui-wrapper {
+  .parallaxy-enabled #ui-wrapper {
     position: fixed;
   }
 
-  #nav-wrapper {
+  .parallaxy-enabled #nav-wrapper {
     position: fixed;
   }
 
-  #page-wrapper {
+  .parallaxy-enabled #page-wrapper {
     margin-top: 40px;
   }
 
-  #logo {
+  .parallaxy-disabled #header-wrapper {
+    position: absolute;
+    top: 180px;
+    width: 100%;
+  }
+  .parallaxy-disabled #featured-image {
+    display: block;
+  }
+  .parallaxy-disabled #logo {
+    text-align: left;
+  }
+
+  .parallaxy-disabled.logged-in #header-wrapper {
+    top: 245px;
+  }
+
+  .parallaxy-enabled.logged-in #logo {
+    top: 215px;
+  }
+  .parallaxy-enabled #logo {
     position: fixed;
     top: 152px;
-  }
-  .logged-in #logo {
-    top: 215px;
   }
 
   #page-title {
@@ -3486,11 +3512,13 @@ div.messages ul {
     background-image: url("images/patterns/padded.png");
     background-repeat: repeat;
     border-top: 4px solid #222;
-    margin-top: 430px;
     -moz-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2) inset, 0px -20px 60px 3px rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2) inset, 0px -20px 60px 3px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2) inset, 0px -20px 60px 3px rgba(0, 0, 0, 0.7);
     position: relative;
+  }
+  .parallaxy-enabled #content-wrapper {
+    margin-top: 430px;
   }
   #content-wrapper .container {
     background-color: white;

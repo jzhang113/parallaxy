@@ -15,6 +15,9 @@ html {
 }
 
 #featured-image {
-  position: fixed;
   height: 430px;
+
+  .parallaxy-enabled & {
+    position: fixed;
+  }
 }
