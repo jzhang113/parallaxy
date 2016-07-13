@@ -79,7 +79,7 @@ function drush_at_parallaxy($name = NULL, $machine_name = NULL) {
     '= AT Subtheme' => '= ' . $name,
   );
   if ($description = drush_get_option('description')) {
-    $alterations['Starter subtheme for at_parallaxy. Copy this subtheme to get started building your own Drupal theme. For help see our <b><a href="http://at_parallaxys.com/documentation/at_parallaxys-documentation" title="at_parallaxys.com - Rocking the hardest since 2006">documentation</a></b>. If you have a problem and need additional help please use the <b><a href="http://drupal.org/project/issues/at_parallaxy">issue queue</a></b>.'] = $description;
+    $alterations['Starter subtheme for at_parallaxy. Copy this subtheme to get started building your own Drupal theme. For help see our <b><a href="https://at_parallaxys.com/documentation/at_parallaxys-documentation" title="at_parallaxys.com - Rocking the hardest since 2006">documentation</a></b>. If you have a problem and need additional help please use the <b><a href="https://drupal.org/project/issues/at_parallaxy">issue queue</a></b>.'] = $description;
   }
   drush_op('at_parallaxy_file_str_replace', $subtheme_info_file, array_keys($alterations), $alterations);
 
